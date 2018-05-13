@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>ToDo's</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  </head>
+  <body onload="refreshDataLokal()" class="container">
+	    <header> 
+			<h1>ToDo-Manager</h1>
+			<div  class="nav nav-tabs"> 
+				<a href="create.html" >erstellen</a>
+				<a href="modify.html" >verändern</a>
+				<a href="main.html" >Übersicht</a>
+				<a href="impressum.html" >impressum</a>
+			</div>
+		</header> 
+		
+		<article>
+			<form action="/data/ToDos" method="post" name="modifyToDo">
+				
+				<textarea name="task" placeholder="Was ist zu tun?" cols="50" 	required 	class="col-xs-12 col-sm-12  col-md-12 col-xl-12"></textarea>
+				<input type="range" value=0										required	class="col-xs-3 col-sm-3 col-md-3 ">
+				<input type="date" name="date" max="2100-01-01" min="2018-01-01" required 	class="col-xs-6 col-sm-4 col-md-3 "/>
+				<input type="number" name="id"  placeholder="ID des Totos"		required	class="col-xs-3 col-sm-4 col-md-3 ">
+				<input type="submit" value="Absenden" 										class="col-xs-3 col-sm-4 col-md-6 "/>
+				
+				
+			</form>
+		</article> 
+	
+  </body>
+</html>

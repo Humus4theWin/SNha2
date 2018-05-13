@@ -1,0 +1,19 @@
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+	padding: 2px !important;
+}
+input{
+	display:inline !important;
+}
+button{
+	width: 100%;
+	display:block;
+	background-color: #bbb;
+}
+a{
+	color: yellow;
+	
+	
+}

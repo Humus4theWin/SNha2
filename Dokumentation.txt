@@ -1,0 +1,5 @@
+Datenmodell JSON:
+Keys: 	"task": Content, what to do?	String
+	"date": deadline 		DD.MM.YYYY
+	"stat": percentage done 	float
+
